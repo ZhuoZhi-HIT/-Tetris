@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jul 23 14:00:41 2019
+# Process ID: 9952
+# Current directory: C:/Users/Coronation/Desktop/tetris_test_1.2(1)/tetris_test_1.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3352 C:\Users\Coronation\Desktop\tetris_test_1.2(1)\tetris_test_1.2\tetris_test.xpr
+# Log file: C:/Users/Coronation/Desktop/tetris_test_1.2(1)/tetris_test_1.2/vivado.log
+# Journal file: C:/Users/Coronation/Desktop/tetris_test_1.2(1)/tetris_test_1.2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 14:01:02 2019...

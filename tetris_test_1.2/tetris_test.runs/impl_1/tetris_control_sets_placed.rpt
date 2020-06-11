@@ -1,0 +1,104 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jul 23 10:32:53 2019
+| Host         : Coronation running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file tetris_control_sets_placed.rpt
+| Design       : tetris
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    33 |
+| Unused register locations in slices containing registers |   150 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            8 |
+|      2 |            3 |
+|      4 |            5 |
+|      5 |            2 |
+|      9 |            3 |
+|     10 |            1 |
+|     14 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             260 |          228 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             248 |           68 |
+| Yes          | No                    | No                     |              22 |           16 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              80 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+----------------------------------------------+----------------------------------------------+------------------+----------------+
+|           Clock Signal          |                 Enable Signal                |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++---------------------------------+----------------------------------------------+----------------------------------------------+------------------+----------------+
+|  clk_BUFG                       | debouncer_sw_pause_/counter[31]_i_1__5_n_0   |                                              |                1 |              1 |
+|  clk_BUFG                       | debouncer_sw_rst_/counter[31]_i_1__6_n_0     |                                              |                1 |              1 |
+|  clk_BUFG                       | debouncer_btn_rotate_/counter[31]_i_1__1_n_0 |                                              |                1 |              1 |
+|  clk_BUFG                       | debouncer_btn_right_/counter[31]_i_1__3_n_0  |                                              |                1 |              1 |
+|  clk_BUFG                       | debouncer_btn_left_/counter[31]_i_1__2_n_0   |                                              |                1 |              1 |
+|  clk_BUFG                       | debouncer_btn_drop_/counter[31]_i_1__0_n_0   |                                              |                1 |              1 |
+|  clk_BUFG                       | debouncer_btn_down_/counter[31]_i_1__4_n_0   |                                              |                1 |              1 |
+|  clk_BUFG                       | display_/counter_x[9]_i_1_n_0                |                                              |                1 |              1 |
+|  score_display_/seg_clk_reg_n_0 |                                              | score_display_/p_0_in[0]                     |                1 |              2 |
+|  score_display_/seg_clk_reg_n_0 |                                              | score_display_/sel0[4]                       |                1 |              2 |
+|  clk_too_fast_IBUF_BUFG         |                                              |                                              |                1 |              2 |
+|  clk_BUFG                       | complete_row_/score_4_reg[2][0]              | debouncer_sw_rst_/drop_timer0                |                1 |              4 |
+|  clk_BUFG                       | debouncer_btn_rotate_/game_clk_reg_1[0]      | debouncer_sw_rst_/drop_timer0                |                2 |              4 |
+|  clk_BUFG                       | debouncer_btn_rotate_/E[0]                   | debouncer_sw_rst_/drop_timer0                |                1 |              4 |
+|  clk_BUFG                       | complete_row_/E[0]                           | debouncer_sw_rst_/drop_timer0                |                1 |              4 |
+|  clk_BUFG                       | complete_row_/score_4_reg[1][0]              | debouncer_sw_rst_/drop_timer0                |                1 |              4 |
+|  clk_BUFG                       | debouncer_sw_pause_/E[0]                     | debouncer_sw_rst_/drop_timer0                |                2 |              5 |
+|  clk_BUFG                       | game_clock_/mode_reg[1]                      |                                              |                2 |              5 |
+|  score_display_/seg_clk_reg_n_0 |                                              |                                              |                7 |              9 |
+|  clk_BUFG                       | debouncer_btn_rotate_/shifting_row           |                                              |                6 |              9 |
+|  clk_BUFG                       | display_/counter_x[9]_i_1_n_0                | display_/counter_y                           |                4 |              9 |
+|  clk_BUFG                       |                                              | display_/counter_x[9]_i_1_n_0                |                5 |             10 |
+|  clk_BUFG                       | debouncer_sw_pause_/debounced_prev_reg_1     | debouncer_sw_rst_/drop_timer0                |                4 |             14 |
+|  clk_BUFG                       |                                              | score_display_/counter[17]_i_1__0_n_0        |                5 |             17 |
+|  clk_BUFG                       |                                              | debouncer_btn_rotate_/counter[31]_i_1__1_n_0 |                8 |             31 |
+|  clk_BUFG                       |                                              | debouncer_btn_right_/counter[31]_i_1__3_n_0  |                8 |             31 |
+|  clk_BUFG                       |                                              | debouncer_btn_left_/counter[31]_i_1__2_n_0   |                8 |             31 |
+|  clk_BUFG                       |                                              | debouncer_btn_drop_/counter[31]_i_1__0_n_0   |                8 |             31 |
+|  clk_BUFG                       |                                              | debouncer_btn_down_/counter[31]_i_1__4_n_0   |                8 |             31 |
+|  clk_BUFG                       |                                              | debouncer_sw_pause_/counter[31]_i_1__5_n_0   |                8 |             31 |
+|  clk_BUFG                       |                                              | debouncer_sw_rst_/counter[31]_i_1__6_n_0     |                8 |             31 |
+|  clk_BUFG                       | game_clock_/mode_reg[1]                      | game_clock_/counter[31]_i_1_n_0              |                8 |             32 |
+|  clk_BUFG                       |                                              |                                              |              220 |            249 |
++---------------------------------+----------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

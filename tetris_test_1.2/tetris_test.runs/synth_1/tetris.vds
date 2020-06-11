@@ -1,0 +1,511 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jul 23 10:30:31 2019
+# Process ID: 7436
+# Current directory: G:/Vivado_PROJECTS/tetris_test_1.2/tetris_test.runs/synth_1
+# Command line: vivado.exe -log tetris.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tetris.tcl
+# Log file: G:/Vivado_PROJECTS/tetris_test_1.2/tetris_test.runs/synth_1/tetris.vds
+# Journal file: G:/Vivado_PROJECTS/tetris_test_1.2/tetris_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tetris.tcl -notrace
+Command: synth_design -top tetris -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8680 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.105 ; gain = 98.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tetris' [C:/Users/Coronation/Desktop/tetris_test/tetris.v:3]
+INFO: [Synth 8-6157] synthesizing module 'randomizer' [C:/Users/Coronation/Desktop/tetris_test/randomizer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'randomizer' (1#1) [C:/Users/Coronation/Desktop/tetris_test/randomizer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/Coronation/Desktop/tetris_test/debouncer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (2#1) [C:/Users/Coronation/Desktop/tetris_test/debouncer.v:1]
+WARNING: [Synth 8-350] instance 'debouncer_btn_drop_' of module 'debouncer' requires 4 connections, but only 3 given [C:/Users/Coronation/Desktop/tetris_test/tetris.v:58]
+WARNING: [Synth 8-350] instance 'debouncer_btn_rotate_' of module 'debouncer' requires 4 connections, but only 3 given [C:/Users/Coronation/Desktop/tetris_test/tetris.v:63]
+WARNING: [Synth 8-350] instance 'debouncer_btn_left_' of module 'debouncer' requires 4 connections, but only 3 given [C:/Users/Coronation/Desktop/tetris_test/tetris.v:68]
+WARNING: [Synth 8-350] instance 'debouncer_btn_right_' of module 'debouncer' requires 4 connections, but only 3 given [C:/Users/Coronation/Desktop/tetris_test/tetris.v:73]
+WARNING: [Synth 8-350] instance 'debouncer_btn_down_' of module 'debouncer' requires 4 connections, but only 3 given [C:/Users/Coronation/Desktop/tetris_test/tetris.v:78]
+INFO: [Synth 8-6157] synthesizing module 'calc_cur_blk' [C:/Users/Coronation/Desktop/tetris_test/calc_cur_blk.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'calc_cur_blk' (3#1) [C:/Users/Coronation/Desktop/tetris_test/calc_cur_blk.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [C:/Users/Coronation/Desktop/tetris_test/vga_display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (4#1) [C:/Users/Coronation/Desktop/tetris_test/vga_display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'game_clock' [C:/Users/Coronation/Desktop/tetris_test/game_clock.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'game_clock' (5#1) [C:/Users/Coronation/Desktop/tetris_test/game_clock.v:1]
+INFO: [Synth 8-6157] synthesizing module 'calc_test_pos_rot' [C:/Users/Coronation/Desktop/tetris_test/calc_test_pos_rot.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'calc_test_pos_rot' (6#1) [C:/Users/Coronation/Desktop/tetris_test/calc_test_pos_rot.v:3]
+INFO: [Synth 8-6157] synthesizing module 'seg_display' [C:/Users/Coronation/Desktop/tetris_test/seg_display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'seg_display' (7#1) [C:/Users/Coronation/Desktop/tetris_test/seg_display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'complete_row' [C:/Users/Coronation/Desktop/tetris_test/complete_row.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'complete_row' (8#1) [C:/Users/Coronation/Desktop/tetris_test/complete_row.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tetris' (9#1) [C:/Users/Coronation/Desktop/tetris_test/tetris.v:3]
+WARNING: [Synth 8-3331] design calc_test_pos_rot has unconnected port btn_drop_en
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 494.527 ; gain = 155.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 494.527 ; gain = 155.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 494.527 ; gain = 155.551
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/Vivado_PROJECTS/tetris_test_1.2/tetris_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [G:/Vivado_PROJECTS/tetris_test_1.2/tetris_test.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/Vivado_PROJECTS/tetris_test_1.2/tetris_test.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tetris_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tetris_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 836.816 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 836.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 836.816 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 836.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 836.816 ; gain = 497.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 836.816 ; gain = 497.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 836.816 ; gain = 497.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debounced" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "game_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "seg_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seg_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shifting_row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shifting_row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 836.816 ; gain = 497.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 11    
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 12    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	              220 Bit    Registers := 1     
+	               32 Bit    Registers := 9     
+	               18 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Multipliers : 
+	                 4x32  Multipliers := 1     
++---Muxes : 
+	   5 Input    220 Bit        Muxes := 1     
+	   4 Input    220 Bit        Muxes := 1     
+	   6 Input    220 Bit        Muxes := 1     
+	   2 Input    220 Bit        Muxes := 7     
+	   2 Input     32 Bit        Muxes := 14    
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	  12 Input     12 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 24    
+	   2 Input      8 Bit        Muxes := 22    
+	  13 Input      8 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 10    
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 53    
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tetris 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              220 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 4x32  Multipliers := 1     
++---Muxes : 
+	   5 Input    220 Bit        Muxes := 1     
+	   4 Input    220 Bit        Muxes := 1     
+	   6 Input    220 Bit        Muxes := 1     
+	   2 Input    220 Bit        Muxes := 7     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 43    
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module randomizer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module calc_cur_blk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 6     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 12    
+	   2 Input      8 Bit        Muxes := 11    
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module vga_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	  12 Input     12 Bit        Muxes := 1     
+Module game_clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module calc_test_pos_rot 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module seg_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module complete_row 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "seg_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'shifting_row_reg[4:0]' into 'shifting_row_reg[4:0]' [C:/Users/Coronation/Desktop/tetris_test/tetris.v:358]
+INFO: [Synth 8-5546] ROM "mode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "debouncer_btn_drop_/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_btn_drop_/debounced" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_btn_rotate_/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_btn_rotate_/debounced" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_btn_left_/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_btn_left_/debounced" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_btn_right_/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_btn_right_/debounced" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_btn_down_/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_btn_down_/debounced" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_sw_pause_/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_sw_pause_/debounced" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_sw_rst_/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debouncer_sw_rst_/debounced" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "game_clock_/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "game_clock_/game_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design calc_test_pos_rot has unconnected port btn_drop_en
+INFO: [Synth 8-3886] merging instance 'old_mode_reg[0]' (FDRE) to 'old_mode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'old_mode_reg[1]' (FDRE) to 'old_mode_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\old_mode_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (score_display_/\seg_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 899.195 ; gain = 560.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 899.195 ; gain = 560.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 899.195 ; gain = 560.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1031.633 ; gain = 692.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1031.633 ; gain = 692.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1031.633 ; gain = 692.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1031.633 ; gain = 692.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1031.633 ; gain = 692.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1031.633 ; gain = 692.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1031.633 ; gain = 692.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   244|
+|3     |LUT1   |   105|
+|4     |LUT2   |   414|
+|5     |LUT3   |   690|
+|6     |LUT4   |   575|
+|7     |LUT5   |   398|
+|8     |LUT6   |  2262|
+|9     |MUXF7  |    90|
+|10    |MUXF8  |    11|
+|11    |FDRE   |   605|
+|12    |FDSE   |     5|
+|13    |IBUF   |     8|
+|14    |OBUF   |    26|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------+------+
+|      |Instance                |Module       |Cells |
++------+------------------------+-------------+------+
+|1     |top                     |             |  5435|
+|2     |  complete_row_         |complete_row |    42|
+|3     |  debouncer_btn_down_   |debouncer    |    61|
+|4     |  debouncer_btn_drop_   |debouncer_0  |    55|
+|5     |  debouncer_btn_left_   |debouncer_1  |   213|
+|6     |  debouncer_btn_right_  |debouncer_2  |    63|
+|7     |  debouncer_btn_rotate_ |debouncer_3  |   862|
+|8     |  debouncer_sw_pause_   |debouncer_4  |   506|
+|9     |  debouncer_sw_rst_     |debouncer_5  |   508|
+|10    |  display_              |vga_display  |   891|
+|11    |  game_clock_           |game_clock   |    90|
+|12    |  randomizer_           |randomizer   |     9|
+|13    |  score_display_        |seg_display  |    81|
++------+------------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1031.633 ; gain = 692.656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1031.633 ; gain = 350.367
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1031.633 ; gain = 692.656
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 345 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1031.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1031.633 ; gain = 705.930
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1031.633 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/Vivado_PROJECTS/tetris_test_1.2/tetris_test.runs/synth_1/tetris.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tetris_utilization_synth.rpt -pb tetris_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 10:31:21 2019...
